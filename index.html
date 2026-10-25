@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPEM 388 · Radio</title>
+<meta name="description" content="Radio IPEM 388 — la voz de nuestra comunidad educativa, en vivo las 24 horas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Barra de "AL AIRE" -->
+<div class="onair-bar">
+  <span class="onair-dot"></span>
+  AL AIRE · IPEM 388 transmitiendo en vivo
+</div>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="#top" class="brand">
+      <img src="logoradio.jpeg" alt="Logo de la radio" class="brand-logo">
+      <span class="brand-name">IPEM<em>Radio</em><em> Sanroque</em></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#vivo">En vivo</a></li>
+      <li><a href="#programacion">Programación</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Instituto Provincial de Educación Media N.º 388</p>
+      <h1>La radio la <span class="highlight">hacemos</span><br>nosotros.</h1>
+      <p class="hero-sub">Música, voces y proyectos de nuestra comunidad educativa, transmitiendo en vivo desde el IPEM 388.</p>
+      <a href="#vivo" class="btn-primary">Escuchar ahora</a>
+    </div>
+
+    <!-- Ecualizador: elemento visual de firma -->
+    <div class="equalizer" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </section>
+
+  <!-- PLAYER -->
+  <section class="player-section" id="vivo">
+    <div class="section-head">
+      <p class="eyebrow">En vivo</p>
+      <h2>Sintonizanos ahora</h2>
+    </div>
+
+    <div class="player-card">
+      <div class="player-frame-wrap">
+        <iframe
+          id="radioFrame"
+          src="https://ipem388.radio12345.com/"
+          title="Reproductor en vivo de IPEM 388"
+          loading="lazy"
+          allow="autoplay"
+          scrolling="no">
+        </iframe>
+      </div>
+      <p class="player-note">
+        Si el reproductor no aparece, escuchá la radio directamente
+        <a href="https://ipem388.radio12345.com/" target="_blank" rel="noopener">en esta página</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROGRAMACION -->
+  <section class="schedule" id="programacion">
+    <div class="section-head">
+      <p class="eyebrow">Grilla</p>
+      <h2>Programación semanal</h2>
+    </div>
+
+    <div class="schedule-grid">
+      <article class="show-card">
+        <span class="show-time">Lunes 13.30; domingos 16:00hs</span>
+        <h3>La mejor siesta.</h3>
+        <p>Taller de radio del Hospital Colonia Santa María con la participación de estudiantes del Ipem 388.</p>
+      </article>
+      <article class="show-card">
+        <span class="show-time">Miércoles 8.00; Jueves 9.00hs</span>
+        <h3>Sexto al aire</h3>
+        <p>Sexto turno mañana nos comparte efemérides, actualidad, deportes y te acompaña con el matecito de la mañana.</p>
+      </article>
+      <article class="show-card">
+        <span class="show-time">Jueves 11:20 hs</span>
+        <h3>Una historia una canción</h3>
+        <p>Las canciones nacen, se reproducen y crecen en determinados contextos históricos y geográficos. Aquí algunos ejemplos.</p>
+      </article>
+      <article class="show-card">
+        <span class="show-time">Jueves 12.00 hs.</span>
+        <h3>Club de radio</h3>
+        <p>Los jueves los radialistas se encuentran en su Club y nos comparten lo que saben.</p>
+      </article>
+    </div>
+    <p class="schedule-note">* los horarios pueden variar si se actualiza la programacion semanal</p>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="about-text">
+      <p class="eyebrow">Quiénes somos</p>
+      <h2>Un proyecto hecho por y para la comunidad del IPEM 388</h2>
+      <p>
+       El Ipem 388 está ubicado en la comuna de San Roque, al centro del departamento de 
+Punilla, a la vera del lago homónimo, a 40 km. de Córdoba Capital. Desde el año 2011 cuenta con una radio escolar con señal de FM, además de difundir contenidos a través de las redes sociales Facebook, Instagram, Ivoox y soundcloud.
+En el 2025 creamos nuestra mutual "Siembra Mutua", siendo la 107.1 uno de los servicios que brinda a la comunidad y a nuestros asociados.
+      </p>
+       <a href="https://www.instagram.com/mutual_siembramutua388?igsh=MWh3ZHFpM3JhNDV0Nw==" target="_blank" rel="noopener">IG Siembra Mutua</a>.
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <span class="stat-num">fm</span>
+        <span class="stat-label">107.1 MHz</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Estudiantil</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="section-head">
+      <p class="eyebrow">Contacto</p>
+      <h2>Srguinos en nuestras redes</h2>
+    </div>
+    <p class="contact-text">
+      ¿Querés proponer un programa o pasar un tema?
+      Escribinos y te contamos cómo participar.
+    </p>
+    <div class="contact-circles">
+      <a href="https://www.facebook.com/share/1AwWKvzprP/" class="contact-circle" aria-label="Facebook" target="_blank" rel="noopener">
+        <svg viewBox="0 0 320 512" fill="currentColor" width="24" height="24">
+          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/radioescolar.ipem388?igsh=MTQyd3RpbmFyMm1hMg==" class="contact-circle" aria-label="Instagram" target="_blank" rel="noopener">
+        <svg viewBox="0 0 448 512" fill="currentColor" width="24" height="24">
+          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg>
+      </a>
+      <a href="https://on.soundcloud.com/5UEoGp9BctdNt4EEF4" class="contact-circle" aria-label="SoundCloud" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="26" height="26">
+          <path d="M2 15v3M5 13v5M8 11v7M11 12v6"/>
+          <path d="M14 8v10h5.5a3.5 3.5 0 0 0 0-7 4.5 4.5 0 0 0-8.6-1.7"/>
+        </svg>
+      </a>
+      <a href="https://youtube.com/@radio388?si=b8qFojQ0s82rCdrG" class="contact-circle" aria-label="YouTube" target="_blank" rel="noopener">
+        <svg viewBox="0 0 576 512" fill="currentColor" width="26" height="26">
+          <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2-142.7 81.2z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> IPEM 388 Radio · Instituto Provincial de Educación Media N.º 388</p>
+</footer>
+
+<script src="global.js"></script>
+</body>
+</html>
